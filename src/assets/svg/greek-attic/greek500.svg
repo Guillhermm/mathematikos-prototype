@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg90391"
+   width="113.98817"
+   height="128"
+   viewBox="0 0 113.98817 128"
+   sodipodi:docname="greek500.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs90395" />
+  <sodipodi:namedview
+     id="namedview90393"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="2.7804383"
+     inkscape:cx="152.13429"
+     inkscape:cy="118.14684"
+     inkscape:window-width="1850"
+     inkscape:window-height="1016"
+     inkscape:window-x="70"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g90397"
+     height="128px" />
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Image"
+     id="g90397"
+     transform="translate(51.70341,145.15797)">
+    <g
+       aria-label="𐅅"
+       id="text124445"
+       style="font-size:40px;line-height:1.25"
+       transform="matrix(4.7337278,0,0,4.7337278,-19.75393,303.02179)">
+      <path
+         d="m 3.0506724,-85.157975 v -3.44 c 0,-1.44 0.16,-1.8 1.36,-1.8 v -0.6 h -5.56 v 0.6 c 1.20000002,0 1.36000002,0.36 1.36000002,1.8 v 8.16 c 0,1.68 -0.16,2.04 -1.36000002,2.04 v 0.6 h 5.56 v -0.6 c -1.2,0 -1.36,-0.36 -1.36,-1.8 v -3.76 h 4.44 v 3.52 c 0,1.68 -0.16,2.04 -1.36,2.04 v 0.6 h 5.5599996 v -0.6 c -1.2,0 -1.36,-0.36 -1.36,-1.8 v -8.4 c 0,-1.44 0.16,-1.8 1.36,-1.8 v -0.6 H 6.1306724 v 0.6 c 1.2,0 1.36,0.36 1.36,1.8 v 3.44 z m 14.2799996,6.24 v -14.16 c 0,-1.28 -0.16,-1.6 -1.52,-1.6 H -5.2293276 c -1.36,0 -1.52,0.32 -1.52,1.6 v 23.84 c 0,1.28 0.16,1.6 1.52,1.6 h 1 c 1.36,0 1.52,-0.32 1.52,-1.6 v -22.44 c 0,-1.12 0.24,-1.36 1.32,-1.36 H 11.970672 c 1.08,0 1.32,0.24 1.32,1.36 v 12.76 c 0,1.28 0.16,1.6 1.52,1.6 h 1 c 1.36,0 1.52,-0.32 1.52,-1.6 z"
+         id="path126513" />
+    </g>
+  </g>
+</svg>

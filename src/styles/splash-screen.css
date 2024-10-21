@@ -1,0 +1,16 @@
+/* Splash Screen specific styles */
+.splash-screen {
+  @apply relative flex flex-col items-center justify-center w-full h-full bg-gradient-to-r from-[#122620] to-gray-900;
+}
+
+.splash-title {
+  @apply text-5xl font-bold text-white;
+}
+
+.splash-instructions {
+  @apply text-xl text-white mt-4;
+}
+
+.splash-svg {
+  @apply w-24 h-24 transform transition duration-500 hover:scale-[1.25];
+}

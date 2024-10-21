@@ -1,0 +1,32 @@
+# Node.js
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Vite cache
+.vite
+dist
+
+# Local editor
+.vscode
+.idea
+.DS_Store
+*.log
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Output directories
+out/
+build/
+
+# System files
+Thumbs.db
+*.tmp
+
+# ESLint
+.eslintcache
+
+# Prettier
+.prettierignore

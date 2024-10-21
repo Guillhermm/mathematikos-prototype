@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg90391"
+   width="97.564636"
+   height="128"
+   viewBox="0 0 97.564639 128"
+   sodipodi:docname="greek100.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs90395" />
+  <sodipodi:namedview
+     id="namedview90393"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="2.7804383"
+     inkscape:cx="120.4846"
+     inkscape:cy="104.12027"
+     inkscape:window-width="1850"
+     inkscape:window-height="1016"
+     inkscape:window-x="70"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g90397"
+     height="128px" />
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Image"
+     id="g90397"
+     transform="translate(20.087782,131.20462)">
+    <g
+       aria-label="Η"
+       id="text119506"
+       style="font-size:40px;line-height:1.25"
+       transform="matrix(4.3895511,0,0,4.3895511,-97.261595,227.79348)">
+      <path
+         d="m 17.581254,-81.784695 h 3.945313 v 11.953125 h 14.335937 v -11.953125 h 3.945313 v 29.160157 H 35.862504 V -66.511257 H 21.526567 v 13.886719 h -3.945313 z"
+         id="path122096" />
+    </g>
+  </g>
+</svg>
