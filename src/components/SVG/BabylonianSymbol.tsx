@@ -5,9 +5,14 @@ import BabylonianTen from './Babylonian/Babylonian10';
 type BabylonianSymbolProps = {
   value: number;
   className?: string;
+  classNameContainer?: string;
 };
 
-const BabylonianSymbol = ({ value, className }: BabylonianSymbolProps) => {
+const BabylonianSymbol = ({
+  value,
+  className,
+  classNameContainer,
+}: BabylonianSymbolProps) => {
   // SVG mapping table.
   const babylonianMap: { [key: number]: JSX.Element } = {
     0: <></>,
@@ -49,7 +54,7 @@ const BabylonianSymbol = ({ value, className }: BabylonianSymbolProps) => {
   const babylonianSymbols = intToBabylonian(value);
 
   return (
-    <div className="babylonian-number">
+    <div className={`babylonian-number ${classNameContainer}`}>
       {babylonianSymbols.map((symbol, index) => (
         <div
           key={index}

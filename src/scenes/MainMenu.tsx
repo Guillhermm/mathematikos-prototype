@@ -27,8 +27,7 @@ class MainMenuScene extends Phaser.Scene {
     title.setOrigin(0.5);
 
     this.createButton('Start Game', 230, () => {
-      this.scene.start('GameScene');
-      // Go to game scene...
+      this.scene.start('ThemeSelectionScene');
     });
 
     this.createButton('Settings', 300, () => {

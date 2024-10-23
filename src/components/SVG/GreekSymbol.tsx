@@ -13,9 +13,14 @@ import { GreekSymbolBaseProps } from './Greek/types';
 
 interface GreekSymbolProps extends GreekSymbolBaseProps {
   value: number;
+  classNameContainer?: string;
 }
 
-const GreekSymbol = ({ value, className }: GreekSymbolProps) => {
+const GreekSymbol = ({
+  value,
+  className,
+  classNameContainer,
+}: GreekSymbolProps) => {
   const greekMap: { [key: string]: JSX.Element } = {
     1: <GreekOne className={className} />,
     5: <GreekFive className={className} />,
@@ -52,7 +57,7 @@ const GreekSymbol = ({ value, className }: GreekSymbolProps) => {
   const greekSymbols = convertToGreek(value);
 
   return (
-    <div className="greek-number">
+    <div className={`greek-number ${classNameContainer}`}>
       {greekSymbols.map((symbol, index) => (
         <div key={index} className="greek-char feather feather-layers">
           {symbol}

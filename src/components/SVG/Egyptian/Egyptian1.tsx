@@ -10,7 +10,7 @@ const EgyptianOne = ({ className }: EgyptianSymbolBaseProps) => {
     >
       <g transform="translate(-42.309509,-147.13739)">
         <path
-          style={{ fill: '#fff' }}
+          className="fill-black"
           d="m 42.309509,164.07072 v -16.93333 h 2.38125 2.38125 v 16.93333 16.93333 h -2.38125 -2.38125 z"
         />
       </g>

@@ -5,9 +5,14 @@ import { RomanSymbolBaseProps } from './Roman/types';
 
 type RomanSymbolProps = Pick<RomanSymbolBaseProps, 'className'> & {
   value: number;
+  classNameContainer?: string;
 };
 
-const RomanSymbol = ({ value, className }: RomanSymbolProps) => {
+const RomanSymbol = ({
+  value,
+  className,
+  classNameContainer,
+}: RomanSymbolProps) => {
   const romanMap: { [key: string]: JSX.Element } = {
     I: <Roman value="I" />,
     V: <Roman value="V" />,
@@ -21,7 +26,7 @@ const RomanSymbol = ({ value, className }: RomanSymbolProps) => {
   const romanString = intToRoman(value);
 
   return (
-    <div className="roman-number">
+    <div className={`roman-number ${classNameContainer}`}>
       {romanString.split('').map((char, index) => (
         <div key={index} className={`roman-char ${className}`}>
           {romanMap[char]}

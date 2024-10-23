@@ -14,3 +14,25 @@
 .splash-svg {
   @apply w-24 h-24 transform transition duration-500 hover:scale-[1.25];
 }
+
+.splash-svg,
+.splash-svg g,
+.splash-svg path {
+  @apply fill-white;
+}
+
+.splash-svg-left-top {
+  @apply absolute left-2 top-16 md:left-12 md:top-32;
+}
+
+.splash-svg-left-bottom {
+  @apply absolute left-2 bottom-16 md:left-10 md:bottom-10;
+}
+
+.splash-svg-right-top {
+  @apply absolute right-2 top-4 md:right-10 md:top-10;
+}
+
+.splash-svg-right-bottom {
+  @apply absolute right-4 bottom-6 md:right-8 md:bottom-8;
+}

@@ -10,9 +10,14 @@ import { EgyptianSymbolBaseProps } from './Egyptian/types';
 
 interface EgyptianSymbolProps extends EgyptianSymbolBaseProps {
   value: number;
+  classNameContainer?: string;
 }
 
-const EgyptianSymbol = ({ value, className }: EgyptianSymbolProps) => {
+const EgyptianSymbol = ({
+  value,
+  className,
+  classNameContainer,
+}: EgyptianSymbolProps) => {
   const symbols = [];
 
   let remaining = value;
@@ -94,7 +99,9 @@ const EgyptianSymbol = ({ value, className }: EgyptianSymbolProps) => {
     remaining -= 1;
   }
 
-  return <div className="egyptian-number">{symbols}</div>;
+  return (
+    <div className={`egyptian-number ${classNameContainer}`}>{symbols}</div>
+  );
 };
 
 export default EgyptianSymbol;

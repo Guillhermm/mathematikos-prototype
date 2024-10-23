@@ -10,7 +10,7 @@ const GreekOne = ({ className }: GreekSymbolBaseProps) => {
     >
       <g transform="translate(-44.428777,16.630278)">
         <g
-          style={{ fill: '#fff' }}
+          className="fill-black"
           transform="matrix(4.3895513,0,0,4.3895513,-179.94398,-160.56208)"
         >
           <path d="m 51.115192,32.789639 h 3.945313 v 29.160156 h -3.945313 z" />

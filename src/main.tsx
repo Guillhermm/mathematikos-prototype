@@ -2,108 +2,104 @@ import React from 'react';
 import { createRoot, Root } from 'react-dom/client';
 import Phaser from 'phaser';
 import SplashScreen from './screens/SplashScreen';
-import { romanToInt, intToRoman } from './utils/conversion/roman';
-import {
-  babylonianToInt,
-  intToBabylonian,
-} from './utils/conversion/babylonian';
-import './styles/main.css';
 import MainMenuScene from './scenes/MainMenu';
+import ThemeSelectionScene from './scenes/ThemeSelectionScene';
+import './styles/main.css';
 
-class MainScene extends Phaser.Scene {
-  constructor() {
-    super({ key: 'MainScene' });
-  }
+// class MainScene extends Phaser.Scene {
+//   constructor() {
+//     super({ key: 'MainScene' });
+//   }
 
-  preload() {
-    // Load assets here...
-  }
+//   preload() {
+//     // Load assets here...
+//   }
 
-  create() {
-    this.cameras.main.setBackgroundColor('#B68D40');
+//   create() {
+//     this.cameras.main.setBackgroundColor('#B68D40');
 
-    // Set title.
-    const titleStyle = {
-      font: '48px Garamond',
-      fill: '#4b3d2e',
-      align: 'center',
-    };
-    this.add
-      .text(this.cameras.main.centerX, 40, 'Mathematikos', titleStyle)
-      .setOrigin(0.5);
+//     // Set title.
+//     const titleStyle = {
+//       font: '48px Garamond',
+//       fill: '#4b3d2e',
+//       align: 'center',
+//     };
+//     this.add
+//       .text(this.cameras.main.centerX, 40, 'Mathematikos', titleStyle)
+//       .setOrigin(0.5);
 
-    // Set instructions.
-    const instructionStyle = {
-      font: '24px Garamond',
-      fill: '#4b3d2e',
-      align: 'center',
-    };
-    this.showText(
-      'Learn the ancient ways of numbers.',
-      instructionStyle,
-      this.cameras.main.centerX,
-      200
-    );
+//     // Set instructions.
+//     const instructionStyle = {
+//       font: '24px Garamond',
+//       fill: '#4b3d2e',
+//       align: 'center',
+//     };
+//     this.showText(
+//       'Learn the ancient ways of numbers.',
+//       instructionStyle,
+//       this.cameras.main.centerX,
+//       200
+//     );
 
-    // Test roman conversion.
-    const romanNumber: string = 'XIII';
-    const integer: number = romanToInt(romanNumber);
-    console.log(`The integer value of ${romanNumber} is ${integer}`);
+//     // Test roman conversion.
+//     const romanNumber: string = 'XIII';
+//     const integer: number = romanToInt(romanNumber);
+//     console.log(`The integer value of ${romanNumber} is ${integer}`);
 
-    const num: number = 13;
-    const roman: string = intToRoman(num);
-    console.log(`The Roman numeral for ${num} is ${roman}`);
+//     const num: number = 13;
+//     const roman: string = intToRoman(num);
+//     console.log(`The Roman numeral for ${num} is ${roman}`);
 
-    // Usage example.
-    const babylonianNumber = '𒁹𒁹𒁹';
-    const integerValue = babylonianToInt(babylonianNumber);
-    console.log(`The integer value of ${babylonianNumber} is ${integerValue}`);
+//     // Usage example.
+//     const babylonianNumber = '𒁹𒁹𒁹';
+//     const integerValue = babylonianToInt(babylonianNumber);
+//     console.log(`The integer value of ${babylonianNumber} is ${integerValue}`);
 
-    // Test roman conversion.
-    const n: number = 10;
-    const babylonian = intToBabylonian(n);
-    console.log(`The Babylonian numeral for ${n} is ${babylonian}`);
+//     // Test roman conversion.
+//     const n: number = 10;
+//     const babylonian = intToBabylonian(n);
+//     console.log(`The Babylonian numeral for ${n} is ${babylonian}`);
 
-    // Configure initial logic.
-  }
+//     // Configure initial logic.
+//   }
 
-  update() {
-    // Game logic updates (in loop).
-  }
+//   update() {
+//     // Game logic updates (in loop).
+//   }
 
-  showText(
-    message: string,
-    textStyle: { font: string; fill: string; align: string },
-    x: number,
-    y: number
-  ) {
-    const textObject = this.add.text(x, y, message, textStyle).setOrigin(0.5);
+//   showText(
+//     message: string,
+//     textStyle: { font: string; fill: string; align: string },
+//     x: number,
+//     y: number
+//   ) {
+//     const textObject = this.add.text(x, y, message, textStyle).setOrigin(0.5);
 
-    // Fade-in animation.
-    // Starts invisible.
-    textObject.alpha = 0;
-    this.tweens.add({
-      targets: textObject,
-      alpha: 1,
-      duration: 1000,
-      ease: 'Power2',
-      onComplete: () => {
-        // Removes text after some time.
-        this.tweens.add({
-          targets: textObject,
-          alpha: 0,
-          // Keep it visible for 2 seconds.
-          delay: 2000,
-          duration: 1000,
-          onComplete: () => {
-            // Revemos text.
-            textObject.destroy();
-          },
-        });
-      },
-    });
-  }
-}
+//     // Fade-in animation.
+//     // Starts invisible.
+//     textObject.alpha = 0;
+//     this.tweens.add({
+//       targets: textObject,
+//       alpha: 1,
+//       duration: 1000,
+//       ease: 'Power2',
+//       onComplete: () => {
+//         // Removes text after some time.
+//         this.tweens.add({
+//           targets: textObject,
+//           alpha: 0,
+//           // Keep it visible for 2 seconds.
+//           delay: 2000,
+//           duration: 1000,
+//           onComplete: () => {
+//             // Revemos text.
+//             textObject.destroy();
+//           },
+//         });
+//       },
+//     });
+//   }
+// }
 
 class MainApp {
   private root: Root | null = null;
@@ -135,7 +131,7 @@ class MainApp {
       type: Phaser.AUTO,
       width: 800,
       height: 600,
-      scene: MainMenuScene,
+      scene: [MainMenuScene, ThemeSelectionScene],
       physics: {
         default: 'arcade',
         arcade: {
