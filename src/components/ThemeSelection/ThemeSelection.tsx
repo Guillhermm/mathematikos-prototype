@@ -9,7 +9,11 @@ import babylonianShader from '../../assets/shaders/babylonian.frag';
 import egyptianShader from '../../assets/shaders/egyptian.frag';
 import greekShader from '../../assets/shaders/greek.frag';
 
-const ThemeSelection = ({ onThemeSelect }: { onThemeSelect: any }) => {
+interface ThemeSelectionProps {
+  onThemeSelect: (theme: string) => void;
+}
+
+const ThemeSelection = ({ onThemeSelect }: ThemeSelectionProps) => {
   const themes = [
     {
       image: <RomanSymbol className="symbol-large" value={1} />,

@@ -5,7 +5,7 @@ interface ThemeCardProps {
   image: JSX.Element;
   name: string;
   shader: string;
-  onClick: any;
+  onClick?: React.MouseEventHandler<HTMLDivElement>;
 }
 
 const ThemeCard = ({ image, name, shader, onClick }: ThemeCardProps) => {
@@ -14,7 +14,10 @@ const ThemeCard = ({ image, name, shader, onClick }: ThemeCardProps) => {
   return (
     <div
       className="flex flex-col items-center justify-center border-4 border-gray-800 shadow-lg bg-gray-200 w-40 h-40 m-4"
-      style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover' }}
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: 'cover',
+      }}
       onClick={onClick}
     >
       <div className="flex items-center justify-center w-20 h-20">{image}</div>

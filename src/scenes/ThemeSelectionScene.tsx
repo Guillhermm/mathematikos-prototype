@@ -32,7 +32,7 @@ class ThemeSelectionScene extends Phaser.Scene {
     container.add([comp]);
 
     // Define a handler for theme selection.
-    const handleThemeSelect = (theme: any) => {
+    const handleThemeSelect = (theme: string) => {
       console.log(`Selected theme: ${theme}`);
       // We can transition to another scene or update the current one...
       this.scene.start('GameScene', { selectedTheme: theme });

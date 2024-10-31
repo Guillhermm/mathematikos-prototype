@@ -9,7 +9,10 @@ export const createShader = (
   gl.shaderSource(shader, source);
   gl.compileShader(shader);
   if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) {
-    console.error('An error occurred compiling the shaders:', gl.getShaderInfoLog(shader));
+    console.error(
+      'An error occurred compiling the shaders:',
+      gl.getShaderInfoLog(shader)
+    );
     gl.deleteShader(shader);
     return null;
   }
@@ -17,7 +20,10 @@ export const createShader = (
 };
 
 // Initialize shader program
-export const initShaderProgram = (gl: WebGLRenderingContext, shaderSource: string) => {
+export const initShaderProgram = (
+  gl: WebGLRenderingContext,
+  shaderSource: string
+) => {
   const vertexShaderSource = `
     attribute vec4 position;
     void main() {
@@ -34,7 +40,10 @@ export const initShaderProgram = (gl: WebGLRenderingContext, shaderSource: strin
     gl.attachShader(program, fragmentShader);
     gl.linkProgram(program);
     if (!gl.getProgramParameter(program, gl.LINK_STATUS)) {
-      console.error('Unable to initialize the shader program:', gl.getProgramInfoLog(program));
+      console.error(
+        'Unable to initialize the shader program:',
+        gl.getProgramInfoLog(program)
+      );
       return null;
     }
   }
@@ -44,10 +53,14 @@ export const initShaderProgram = (gl: WebGLRenderingContext, shaderSource: strin
 
 export const render = (gl: WebGLRenderingContext, program: WebGLProgram) => {
   const vertices = new Float32Array([
-    -1, -1, // Bottom-left
-     1, -1, // Bottom-right
-    -1,  1, // Top-left
-     1,  1, // Top-right
+    -1,
+    -1, // Bottom-left
+    1,
+    -1, // Bottom-right
+    -1,
+    1, // Top-left
+    1,
+    1, // Top-right
   ]);
 
   const buffer = gl.createBuffer();
