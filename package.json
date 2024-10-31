@@ -21,9 +21,11 @@
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-vue": "^9.29.0",
     "prettier": "^3.3.3",
-    "vite": "^5.4.9"
+    "vite": "^5.4.9",
+    "vite-plugin-string": "^1.2.3"
   },
   "dependencies": {
+    "@vitejs/plugin-react": "^4.3.3",
     "autoprefixer": "^10.4.20",
     "phaser": "^3.86.0",
     "postcss": "^8.4.47",

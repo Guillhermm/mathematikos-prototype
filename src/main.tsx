@@ -1,9 +1,9 @@
 import React from 'react';
 import { createRoot, Root } from 'react-dom/client';
 import Phaser from 'phaser';
-import SplashScreen from './screens/SplashScreen';
-import MainMenuScene from './scenes/MainMenu';
+import MainMenuScene from './scenes/MainMenuScene';
 import ThemeSelectionScene from './scenes/ThemeSelectionScene';
+import SplashScreen from './screens/SplashScreen';
 import './styles/main.css';
 
 // class MainScene extends Phaser.Scene {
