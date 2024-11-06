@@ -1,6 +1,7 @@
 import React from 'react';
 import { createRoot, Root } from 'react-dom/client';
 import Phaser from 'phaser';
+import IntroductionScene from './scenes/IntroductionScene';
 import MainMenuScene from './scenes/MainMenuScene';
 import ThemeSelectionScene from './scenes/ThemeSelectionScene';
 import SplashScreen from './screens/SplashScreen';
@@ -131,7 +132,7 @@ class MainApp {
       type: Phaser.AUTO,
       width: 800,
       height: 600,
-      scene: [MainMenuScene, ThemeSelectionScene],
+      scene: [MainMenuScene, ThemeSelectionScene, IntroductionScene],
       physics: {
         default: 'arcade',
         arcade: {
