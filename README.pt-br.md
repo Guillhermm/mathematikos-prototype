@@ -1,5 +1,16 @@
 # Prototype Mathematikos
 
+> **⚠️ Este repositório é um protótipo arquivado.**
+> A versão completa e mantida ativamente do Mathematikos está em:
+> **https://github.com/Guillhermm/mathematikos**
+>
+> Jogar agora: **https://guillhermm.github.io/mathematikos/**
+>
+> Este protótipo foi desenvolvido em outubro–novembro de 2024 usando React, TypeScript, Vite e Phaser 3.
+> Está preservado aqui como registro histórico das origens do projeto.
+
+---
+
 **Mathematikos** é um jogo educativo e lúdico que leva os jogadores a uma jornada no tempo, explorando as grandes civilizações da antiguidade ao resolver desafios numéricos e aprender sobre seus sistemas numéricos únicos. Este protótipo inicial foca em proporcionar uma experiência envolvente com operações de adição e subtração, utilizando números dos sistemas egípcio, babilônico, grego, romano e chinês.
 
 ## Objetivo
